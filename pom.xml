@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.codest.mybatis-pager</groupId>
+    <artifactId>parent</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0</version>
+
+    <name>mybatis-pager</name>
+    <url>http://codest.cn</url>
+    <description>Mybatis Pager is an Mybatis Pagination Component.</description>
+
+    <properties>
+        <mybatis.pager.version>1.0</mybatis.pager.version>
+        <java.version>17</java.version>
+        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring.boot.version>3.3.1</spring.boot.version>
+        <jdialects.version>5.0.13.jre8</jdialects.version>
+        <mybatis.version>3.5.16</mybatis.version>
+        <mybatis.spring.version>3.0.3</mybatis.spring.version>
+    </properties>
+
+    <modules>
+        <module>mybatis-pager-spring-boot3-starter</module>
+        <module>mybatis-pager-spring-boot3-test</module>
+        <module>mybatis-pager-spring-boot2-starter</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.drinkjava2</groupId>
+                <artifactId>jdialects</artifactId>
+                <version>${jdialects.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis</groupId>
+                <artifactId>mybatis-spring</artifactId>
+                <version>${mybatis.spring.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.spring.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
