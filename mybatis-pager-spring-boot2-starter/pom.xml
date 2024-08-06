@@ -9,7 +9,7 @@
 
     <groupId>cn.codest</groupId>
     <artifactId>mybatis-pager-spring-boot2-starter</artifactId>
-    <packaging>jar</packaging>
+    <version>${mybatis.pager.version}</version>
 
     <name>mybatis-pager-spring-boot2-starter</name>
     <url>http://maven.apache.org</url>
