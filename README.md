@@ -23,7 +23,7 @@
 <dependency>
     <groupId>cn.codest</groupId>
     <artifactId>mybatis-pager-spring-boot2-starter</artifactId>
-    <version>${mybatis.pager.version}</version>
+    <version>1.0</version>
 </dependency>
 ```
 
@@ -32,7 +32,7 @@
 <dependency>
     <groupId>cn.codest</groupId>
     <artifactId>mybatis-pager-spring-boot3-starter</artifactId>
-    <version>${mybatis.pager.version}</version>
+    <version>1.0</version>
 </dependency>
 ```
 
